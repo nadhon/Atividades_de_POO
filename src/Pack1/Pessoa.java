@@ -1,22 +1,20 @@
 package Pack1;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import static java.time.LocalDate.parse;
 
 public class Pessoa {
     private String nome;
-    private LocalDate dataNascimento;
+    private final int dataNascimento;
     private double altura;
 
     public Pessoa (){
         this.nome = "Nome Desconhecido";
-        this.dataNascimento = LocalDate.now();
+        this.dataNascimento = 0;
         this.altura = 1.70;
     }
     public Pessoa(String nome, String dataNascimento){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy");
         this.nome =  nome;
-        this.dataNascimento = LocalDate.parse(dataNascimento, formatter);
+        this.dataNascimento = Integer.parseInt(dataNascimento);
         this.altura = altura;
     }
 
@@ -27,18 +25,18 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public LocalDate getDataNascimento() {
+    public int getDataNascimento() {
         return dataNascimento;
     }
-    public void setDataNascimento(String dataNascimento){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yy");
-        this.dataNascimento = LocalDate.parse(dataNascimento, formatter);
-    }
+    
     public double getAltura(){
         return altura;
     }
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public void setDataNascimento(int i) {
     }
 }
