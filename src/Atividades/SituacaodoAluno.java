@@ -25,7 +25,7 @@ public class SituacaodoAluno {
         if(media>=7){
             System.out.println("Sua média ponderada é "+media+" Aprovado");
         }
-        if(media>=4){
+        if(media<=4){
             System.out.println("Sua média ponderada é "+media+"Prova Final");
         }
         else{
