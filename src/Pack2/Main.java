@@ -1,10 +1,10 @@
 package Pack2;
 
-import Pack1.Pessoa;
+import Pack1.ImprimirDados;
 
 public class Main {
     public static void main(String[] args){
-        Pessoa pessoa1 = new Pessoa();
+        ImprimirDados pessoa1 = new ImprimirDados();
         pessoa1.setNome("Ricson Santana");
         pessoa1.setDataNascimento(1982);
         pessoa1.setAltura(1.77);
