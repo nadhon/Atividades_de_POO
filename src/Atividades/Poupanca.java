@@ -6,6 +6,9 @@ public class Poupanca extends Conta {
         super(n,s,c);
         this.juros =j;
     }
+    public void creditar(double valor){
+        saldo = saldo + valor;
+    }
     public void rederJuros(){
         double saldo = this.getSaldo();
         this.creditar(saldo*juros);
