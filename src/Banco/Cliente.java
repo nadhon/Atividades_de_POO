@@ -19,4 +19,8 @@ public class Cliente {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
+    public Cliente(String nome,String cpf){
+        this.nome=nome;
+        this.cpf=cpf;
+    }
 }
