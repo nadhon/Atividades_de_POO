@@ -8,7 +8,7 @@ public class Main_Banco {
         int op=0;
         do{
             System.out.println("\nMenu do Banco");
-            System.out.println("1 -Depositar");
+            System.out.println("1 -Criar conta");
             System.out.println("2- Consultar Saldo");
             System.out.println("3-Transferir");
             System.out.println("4- consultar contas");
@@ -20,6 +20,6 @@ public class Main_Banco {
                        String nome=in.next();
                        System.out.println();
                }
-        }
+        }while (op!=6);
     }
 }
