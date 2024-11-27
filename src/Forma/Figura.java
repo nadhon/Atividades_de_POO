@@ -1,13 +1,7 @@
 package Forma;
 
-public class Figura {
-    public int area;
+public abstract class Figura {
+    public double area;
 
-    public int getArea() {
-        return area;
-    }
-
-    public void setArea(int area) {
-        this.area = area;
-    }
+    abstract double area();
 }
