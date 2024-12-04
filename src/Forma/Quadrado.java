@@ -14,4 +14,16 @@ public class Quadrado extends Figura{
     double area(){
       return lado *lado;
     }
+
+    public Quadrado() {
+    }
+    public Quadrado(String cor, int lado){
+        super();
+        this.lado=lado;
+    }
+    public Quadrado(String cor, int lado,boolean d){
+        super();
+        this.lado=lado;
+
+    }
 }
