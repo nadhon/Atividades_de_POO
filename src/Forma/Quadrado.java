@@ -24,6 +24,8 @@ public class Quadrado extends Figura{
     public Quadrado(String cor, int lado,boolean d){
         super();
         this.lado=lado;
-
+    }
+    public double area(double lado){
+        return lado*lado;
     }
 }
