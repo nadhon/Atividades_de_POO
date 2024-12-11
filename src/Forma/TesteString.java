@@ -2,10 +2,15 @@ package Forma;
 
 public class TesteString {
     private static void aumentarLetras() throws NullPointerException{
-        String frase= null;
+        //Scanner scanner= new Scanner(System.in);
+        //System.out.println("Digite uma frase");
+        //System.out.println("Frase:  ");
+        //String text = scanner.next();
+        String frase= "minha vida é levada ou limite e colocada no problema ";
         String novaFrase = null;
+        novaFrase = frase.toUpperCase();
         System.out.println("frase antiga:"+frase);
-        System.out.println("frase nova: "+novaFrase);
+        System.out.println("frase nova: "+ novaFrase);
     }
     public static void main(String[] args){
         try{
