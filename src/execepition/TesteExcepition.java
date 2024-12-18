@@ -21,7 +21,8 @@ public class TesteExcepition {
                  System.out.println(i);
              }
         }catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("fim do metodo2");
+            System.out.println(e);
         }
+        System.out.println("fim do metodo2");
     }
 }
